@@ -1,0 +1,4 @@
+{
+  "ext": "pug,mp4,js,css",
+  "exec": "pug index.pug"
+}

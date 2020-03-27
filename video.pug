@@ -1,0 +1,4 @@
+mixin video(id)
+    video.js-player(controls loop mute)
+        each size in [480, 720, 1080]
+            source(src=`assets/clips ${size}/${id}.mp4` type="video/mp4" size=size)
