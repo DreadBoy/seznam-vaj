@@ -4,20 +4,17 @@ doctype html
 head
     meta(name='viewport' content='width=device-width, initial-scale=1')
     title Seznam vaj
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/container.min.css")
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.min.css")
     link(rel="stylesheet" href="milligram.min.css")
-    link(rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css")
-    script(src='https://cdn.plyr.io/3.5.10/plyr.js')
-    style(type='text/css')
-        include style.css
+    link(rel="stylesheet" href="style.css")
 body
-    .ui.container.stackable.grid
-        .column.sixteen.wide
-            h1 Zbran seznam vaj
-            p Avtor: Matic Leva
-            h3 Raztezne vaje
-        each id in ["1", "2", "3","3-2",  "4", "5 - posnami", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20 - posnami", "21", "22", "23", "24", "25", "26", "27", "28", "29 - posnami", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39"]
-            .column.eight.wide
-                +video(id)
-    script(src='script.js')
+    .container
+        h1 Seznam razteznih vaj
+        p
+            | Avtor: Matic Leva
+            br
+            | Posodobljeno: 22. 11. 2022
+        .grid
+                each id in ["1", "2", "3","3-2",  "4", "5 - posnami", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20 - posnami", "21", "22", "23", "24", "25", "26", "27", "28", "29 - posnami", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39"]
+                    .column
+                        +video(id)
+        script(src='script.js')

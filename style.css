@@ -1,6 +1,18 @@
-video {width: 100%;}
-h3 {
-    padding-bottom: 0.5rem;
-    margin-bottom: -1rem;
-    border-bottom: 1px solid rgba(96, 108, 118, 0.5); /*#606c76*/
+video {
+    width: 100%;
+    aspect-ratio: 1280 / 720;
+    object-fit: cover;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.column {
+    width: calc(50% - 0.5rem);
+}
+@media only screen and (max-width: 900px) {
+    .column {
+        width: calc(100%);
+    }
 }

@@ -1,4 +1,4 @@
 {
   "ext": "pug,mp4,js,css",
-  "exec": "pug index.pug"
+  "exec": "pug index.pug && http-server"
 }

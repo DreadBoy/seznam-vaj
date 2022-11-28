@@ -5,10 +5,12 @@
   "author": "Matic Leva <vertical3life@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon "
+    "start": "nodemon",
+    "build": "pug index.pug"
   },
   "dependencies": {
     "nodemon": "^2.0.2",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "http-server": "^14.1.1"
   }
 }
